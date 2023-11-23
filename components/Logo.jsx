@@ -6,7 +6,7 @@ const Logo = () => {
     <Link href="/">
       <Image
         src="/vabankdev_logo_white.svg"
-        width={180}
+        width={120}
         height={54}
         priority
         alt=""
