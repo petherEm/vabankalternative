@@ -19,7 +19,7 @@ const servicesData = [
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Data Science",
     description:
-      "Utilizing AI and Python, we deliver precise data science solutions for intelligent, data-driven decision-making, ensuring our clients harness the full potential of their data for strategic advantage and growth.",
+      "Leveraging Python excellence and latest AI developments, we deliver precise solutions for intelligent, data-driven decision-making, ensuring our clients harness the full potential of their data for strategic advantage and growth.",
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,

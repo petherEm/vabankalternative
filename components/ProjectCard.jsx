@@ -5,6 +5,8 @@ import { Githbu, Github, Link2Icon } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 const ProjectCard = ({ project }) => {
+  const { tags } = project;
+
   return (
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
@@ -39,7 +41,13 @@ const ProjectCard = ({ project }) => {
           {project.category}
         </Badge>
         <h4>{project.name}</h4>
+
         <p className="text-muted-foreground text-lg">{project.description}</p>
+        <div>
+          {tags.map((tag) => (
+            <span className="ml-2">#{tag}</span>
+          ))}
+        </div>
       </div>
     </Card>
   );

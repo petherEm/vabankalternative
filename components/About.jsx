@@ -1,6 +1,17 @@
 import DevImg from "./DevImg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  SiJavascript,
+  SiPython,
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiPandas,
+  SiNumpy,
+  SiMapbox,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 import {
   User2,
@@ -25,10 +36,7 @@ const infoData = [
     icon: <MailIcon size={20} />,
     text: "hello@vabank.dev",
   },
-  {
-    icon: <GraduationCap size={20} />,
-    text: "Master of Science",
-  },
+
   {
     icon: <HomeIcon size={20} />,
     text: "Warsaw, Poland",
@@ -137,15 +145,34 @@ const About = () => {
         <div className="flex flex-col xl:flex-row">
           {/* image */}
           <div className="hidden xl:flex flex-1 relative">
-            {/* <DevImg
-              containerStyles="bg_about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="/about/developer.png"
-            /> */}
+            <div className="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative">
+              <div className="absolute top-[100px] right-[130px] mockup-code bg-black/80">
+                <pre data-prefix="$">
+                  <code>import experience</code>
+                </pre>
+                <pre data-prefix=">" className="text-warning">
+                  <code className="">import teamwork</code>
+                </pre>
+
+                <pre data-prefix=">" className="text-warning">
+                  <code className="text-primary">computing...</code>
+                </pre>
+                <pre data-prefix=">" className="text-white">
+                  <code>Done!</code>
+                </pre>
+                <pre data-prefix=">" className="text-white">
+                  <code>...shoot us a challenge</code>
+                </pre>
+                <pre data-prefix=">" className="text-white">
+                  <code>...</code>
+                </pre>
+              </div>
+            </div>
           </div>
           {/* tabs */}
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+              <TabsList className="dark:md:bg-black w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   Team
                 </TabsTrigger>
@@ -165,14 +192,15 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">
-                      15 Years of Excellence: Leveraging Banking & Payments
+                      15 Years of Experience: Leveraging Banking & Payments
                       Expertise
                     </h3>
-                    <p className="subtitle max-w-xl max-auto xl:mx-0">
-                      Drawing from a rich experience in Banking and Payments, we
-                      specialize in crafting intuitive web solutions using the
-                      modern Tech. Our team delivers dynamic user experiences
-                      with proven results
+                    <p className="subtitle text-center lg:text-left xl:max-w-xl xl:mx-0">
+                      Leveraging a wealth of experience that extends beyond
+                      Banking and Payments, we excel in creating intuitive web
+                      solutions and delivering authentic data science expertise.
+                      Our approach is rooted in modern technology, ensuring our
+                      clients receive innovative and efficient digital services.
                     </p>
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
                       {infoData.map((item, index) => {
@@ -190,7 +218,9 @@ const About = () => {
 
                     {/* languages */}
                     <div className="flex flex-col gap-y-2">
-                      <div className="text-primary">Language Skills</div>
+                      <div className="text-primary font-bold">
+                        We speak fluently
+                      </div>
                       <div className="border-b border-border"></div>
                       <div>English, French, Spanish, Polish</div>
                     </div>
@@ -279,8 +309,8 @@ const About = () => {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">Tech we use</h3>
-                    <p className="subtitle max-w-xl max-auto xl:mx-0">
+                    <h3 className="h3 mb-8">Tech we excel</h3>
+                    <p className="subtitle text-center lg:text-left xl:max-w-xl xl:mx-0">
                       Having enjoyed a fulfilling career with Fortune 500
                       companies, our true passion has always been rooted in the
                       fast-paced world of digital transformation. This drive led
@@ -289,7 +319,8 @@ const About = () => {
                       'learning by doing' ethos to stay at the forefront of
                       digital innovation.
                     </p>
-                    <div className="mb-16">
+                    {/* SKILLS */}
+                    {/* <div className="mb-16">
                       <h4 className="text-xl font-semibold mb-2">Skills</h4>
                       <div className="border-b border-border mb-4"></div>
 
@@ -305,15 +336,20 @@ const About = () => {
                           }
                         )}
                       </div>
-                    </div>
+                    </div> */}
 
                     <div>
                       <h4 className="text-xl font-semibold mb-2 xl:text-left">
-                        Tools
+                        Skill set
                       </h4>
                       <div className="border-b border-border mb-4"></div>
                       <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillData, "tools").data.map((item, index) => {
+                        <SiJavascript className="text-5xl text-primary" />
+                        <SiTypescript className="text-5xl text-primary" />
+                        <SiPython className="text-5xl text-primary" />
+                        <TbBrandNextjs className="text-5xl text-primary" />
+                        <SiReact className="text-5xl text-primary" />
+                        {/* {getData(skillData, "tools").data.map((item, index) => {
                           const { imgPath } = item;
                           return (
                             <div key={index} className="">
@@ -326,7 +362,14 @@ const About = () => {
                               />
                             </div>
                           );
-                        })}
+                        })} */}
+                      </div>
+
+                      <div className="mt-6 flex gap-x-8 justify-center xl:justify-start">
+                        <SiTailwindcss className="text-5xl text-primary" />
+                        <SiPandas className="text-5xl text-primary" />
+                        <SiNumpy className="text-5xl text-primary" />
+                        <SiMapbox className="text-5xl text-primary" />
                       </div>
                     </div>
                   </div>

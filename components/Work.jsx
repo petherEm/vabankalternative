@@ -15,48 +15,43 @@ import ProjectCard from "./ProjectCard";
 const projectData = [
   {
     image: "/work/1_Gibbarosa.png",
-    category: "react js",
-    name: "Project 1",
+    category: "fullstack",
+    name: "Gibbarosa, Pre-owned Luxury",
+    tags: ["Next.js", "Sanity.io", "Stripe", "TailwindCSS"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-    link: "/",
-    github: "/",
+      "E-commerce project built on Next.js 14 and Sanity.io with Stripe, BLIK and P24 integration.",
+    link: "https://gibbarosaprod.vercel.app/",
+    github: "https://github.com/petherEm/gibbarosaprod",
   },
   {
     image: "/work/2_Profesor.png",
     category: "next js",
-    name: "Project 2",
+    name: "Academic Researcher, Landing Page",
+    tags: ["Next.js", "TailwindCSS", "Framer Motion"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-    link: "/",
-    github: "/",
+      "Academic researcher and professor landing page built on Next.js 14, TailwindCSS and with Framer Motion animations.",
+    link: "https://alinamaciejewska.pl",
+    github: "https://github.com/petherEm/profesorlina2",
   },
   {
     image: "/work/3_Hexagons.png",
     category: "fullstack",
-    name: "Project 3",
+    name: "Dynamic Mapping, Hexagon View",
+    tags: ["Next.js", "DeckGL", "Mapbox"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-    link: "/",
-    github: "/",
+      "Mapbox and DeckGL integration with Next.js 14. Dynamic mapping with hexagon view and data filtering.",
+    link: "https://psdfrance.vercel.app/hexagonview",
+    github: "https://github.com/petherEm/psdfrance",
   },
   {
     image: "/work/4_BetterGPT.png",
     category: "next js",
-    name: "Project 4",
+    name: "Chatbot, improved GPT-4",
+    tags: ["Next.js", "OpenAI", "Firebase"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "fullstack",
-    name: "Project 5",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-    link: "/",
-    github: "/",
+      "Chatbot built on Next.js 14 and OpenAI API. Improved GPT-4 model with Firebase integration and TailwindCSS styling.",
+    link: "https://bettergpt.vabank.dev/",
+    github: "https://github.com/petherEm/OneGPT",
   },
 ];
 
@@ -68,7 +63,10 @@ const Work = () => {
           <h2 className="section-title mb-4">Selected Projects</h2>
           <p className="subtitle mb-8">
             Our project portfolio showcases a range of work, from commercial to
-            experimental and 'fund and learn' projects.
+            experimental and 'fun and learn' projects.{" "}
+            <span className="text-primary font-bold">
+              We never stop practicing.
+            </span>
           </p>
           <Link href="/projects">
             <Button> All Projects</Button>
