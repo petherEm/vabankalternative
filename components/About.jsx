@@ -344,11 +344,11 @@ const About = () => {
                       </h4>
                       <div className="border-b border-border mb-4"></div>
                       <div className="flex gap-x-8 justify-center xl:justify-start">
-                        <SiJavascript className="text-5xl text-primary" />
-                        <SiTypescript className="text-5xl text-primary" />
-                        <SiPython className="text-5xl text-primary" />
-                        <TbBrandNextjs className="text-5xl text-primary" />
-                        <SiReact className="text-5xl text-primary" />
+                        <SiJavascript className="text-4xl md:text-5xl text-primary" />
+                        <SiTypescript className="text-4xl md:text-5xl text-primary" />
+                        <SiPython className="text-4xl md:text-5xl text-primary" />
+                        <TbBrandNextjs className="text-4xl md:text-5xl text-primary" />
+                        <SiReact className="text-4xl md:text-5xl text-primary" />
                         {/* {getData(skillData, "tools").data.map((item, index) => {
                           const { imgPath } = item;
                           return (
@@ -366,10 +366,10 @@ const About = () => {
                       </div>
 
                       <div className="mt-6 flex gap-x-8 justify-center xl:justify-start">
-                        <SiTailwindcss className="text-5xl text-primary" />
-                        <SiPandas className="text-5xl text-primary" />
-                        <SiNumpy className="text-5xl text-primary" />
-                        <SiMapbox className="text-5xl text-primary" />
+                        <SiTailwindcss className="text-4xl md:text-5xl text-primary" />
+                        <SiPandas className="text-4xl md:text-5xl text-primary" />
+                        <SiNumpy className="text-4xl md:text-5xl text-primary" />
+                        <SiMapbox className="text-4xl md:text-5xl text-primary" />
                       </div>
                     </div>
                   </div>

@@ -23,12 +23,16 @@ const ProjectCard = ({ project }) => {
             <Link
               href={project.link}
               className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Link2Icon className="text-white" />
             </Link>
             <Link
               href={project.github}
               className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Github className="text-white" />
             </Link>
@@ -43,7 +47,7 @@ const ProjectCard = ({ project }) => {
         <h4>{project.name}</h4>
 
         <p className="text-muted-foreground text-lg">{project.description}</p>
-        <div>
+        <div className="text-[12px]">
           {tags.map((tag) => (
             <span className="ml-2">#{tag}</span>
           ))}

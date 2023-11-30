@@ -45,7 +45,7 @@ const projectData = [
   },
   {
     image: "/work/4_BetterGPT.png",
-    category: "next js",
+    category: "fullstack",
     name: "Chatbot, improved GPT-4",
     tags: ["Next.js", "OpenAI", "Firebase"],
     description:
