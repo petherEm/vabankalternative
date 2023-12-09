@@ -69,10 +69,19 @@ const qualificationData = [
       },
       {
         company: "Western Union",
-        role: "Various Senior Manager Roles and P&L responsibility across Central Europe",
-        years: "2012 - 2023",
+        role: "Head of Tech Sales & Integrations, CE",
+        years: "2021 - 2023",
       },
-
+      {
+        company: "Western Union",
+        role: "Senior Digital Product Manager, CE",
+        years: "2014 - 2021",
+      },
+      {
+        company: "Western Union",
+        role: "Compliance Office, CEE",
+        years: "2012 - 2014",
+      },
       {
         company: "State Street",
         role: "Corporate Compliance Officer, Luxembourg",
@@ -127,7 +136,7 @@ const About = () => {
   };
 
   return (
-    <section className="xl:min-h-[1000px] pb-12 xl:py-24">
+    <section className="xl:min-h-[1260px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About us
@@ -139,26 +148,23 @@ const About = () => {
             <div className="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative">
               <div className="absolute top-[100px] right-[130px] mockup-code bg-black/80">
                 <pre data-prefix="$">
-                  <code>Experience...</code>
+                  <code>import experience</code>
                 </pre>
                 <pre data-prefix=">" className="text-warning">
-                  <code className="text-primary">Passion...</code>
+                  <code className="">import teamwork</code>
                 </pre>
 
                 <pre data-prefix=">" className="text-warning">
-                  <code className="">Training...</code>
+                  <code className="text-primary">computing...</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
-                  <code>We never stop learning!</code>
+                  <code>Done!</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
                   <code>...shoot us a challenge</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
-                  <code>..</code>
-                </pre>
-                <pre data-prefix=">" className="text-white">
-                  <code>.</code>
+                  <code>...</code>
                 </pre>
               </div>
             </div>
@@ -250,7 +256,9 @@ const About = () => {
                                     <div className="font-semibold text-xl leading-none mb-2">
                                       {company}
                                     </div>
-                                    <div className="subtitle mb-2">{role}</div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
+                                      {role}
+                                    </div>
                                     <div className="text-base font-medium">
                                       {years}
                                     </div>
@@ -283,7 +291,7 @@ const About = () => {
                                     <div className="font-semibold text-xl leading-none mb-2">
                                       {university}
                                     </div>
-                                    <div className="subtitle mb-2">
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
                                       {qualification}
                                     </div>
                                     <div className="text-base font-medium">

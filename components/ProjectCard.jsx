@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
   const { tags } = project;
 
   return (
-    <Card className="group overflow-hidden relative">
+    <Card className="group overflow-hidden h-[465px] relative">
       <CardHeader className="p-0">
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
           <Image
@@ -40,13 +40,15 @@ const ProjectCard = ({ project }) => {
         </div>
       </CardHeader>
 
-      <div className="h-full px-8 py-6">
+      <div className="h-full px-8 py-5">
         <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
           {project.category}
         </Badge>
         <h4>{project.name}</h4>
 
-        <p className="text-muted-foreground text-lg">{project.description}</p>
+        <p className="text-muted-foreground text-[16px]">
+          {project.description}
+        </p>
         <div className="text-[12px]">
           {tags.map((tag) => (
             <span className="ml-2">#{tag}</span>

@@ -97,7 +97,7 @@ const Reviews = () => {
                     </div>
                   </div>
                 </CardHeader>
-                <CardDescription className="text-lg text-muted-foreground">
+                <CardDescription className="text-[16px] text-muted-foreground">
                   {person.review}
                 </CardDescription>
               </Card>

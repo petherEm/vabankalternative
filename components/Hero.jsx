@@ -88,25 +88,31 @@ const Hero = () => {
               /> */}
               <div className="absolute top-[100px] right-[130px] mockup-code bg-black/80">
                 <pre data-prefix="$">
-                  <code>import ideas</code>
+                  <code>Hi there</code>
                 </pre>
                 <pre data-prefix=">" className="text-warning">
-                  <code className="text-primary">importing...</code>
+                  <code className="text-primary">
+                    <span className="text-white">We think</span> together.
+                  </code>
                 </pre>
                 <pre data-prefix=">" className="text-warning">
-                  <code className="text-primary">consulting...</code>
+                  <code className="text-primary">
+                    <span className="text-white">We build</span> together.
+                  </code>
                 </pre>
                 <pre data-prefix=">" className="text-warning">
-                  <code className="text-primary">improving...</code>
+                  <code className="text-primary">
+                    <span className="text-white">We celebrate</span> together.
+                  </code>
                 </pre>
-                <pre data-prefix=">" className="text-white">
-                  <code>Done!</code>
+                <pre data-prefix=">" className="text-primary">
+                  <code>Let's get in touch!</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
                   <code>....</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
-                  <code>...</code>
+                  <code>Now! :)</code>
                 </pre>
               </div>
             </div>

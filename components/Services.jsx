@@ -51,7 +51,7 @@ const Services = () => {
                 </CardHeader>
                 <CardContent className="text-center">
                   <CardTitle className="mb-4">{item.title}</CardTitle>
-                  <CardDescription className="text-lg">
+                  <CardDescription className="text-[16px]">
                     {item.description}
                   </CardDescription>
                 </CardContent>
