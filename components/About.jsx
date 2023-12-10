@@ -12,6 +12,7 @@ import {
   SiMapbox,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import Social from "./Social";
 
 import {
   User2,

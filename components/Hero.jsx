@@ -105,7 +105,7 @@ const Hero = () => {
                     <span className="text-white">We celebrate</span> together.
                   </code>
                 </pre>
-                <pre data-prefix=">" className="text-primary">
+                <pre data-prefix=">" className="text-white">
                   <code>Let's get in touch!</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
