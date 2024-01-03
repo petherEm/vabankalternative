@@ -138,22 +138,20 @@ const About = () => {
           {/* image */}
           <div className="hidden xl:flex flex-1 relative">
             <div className="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative">
-              <div className="absolute top-[100px] right-[130px] mockup-code bg-black/80">
+              <div className="absolute top-[100px] right-[100px] mockup-code bg-black/80">
                 <pre data-prefix="$">
-                  <code>Experience...</code>
+                  <code>Boosting your business with</code>
                 </pre>
                 <pre data-prefix=">" className="text-warning">
                   <code className="text-primary">Passion...</code>
                 </pre>
 
                 <pre data-prefix=">" className="text-warning">
-                  <code className="">Training...</code>
+                  <code className="">Experience...</code>
                 </pre>
+
                 <pre data-prefix=">" className="text-white">
-                  <code>We never stop learning!</code>
-                </pre>
-                <pre data-prefix=">" className="text-white">
-                  <code>...shoot us a challenge</code>
+                  <code>Expertise...</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
                   <code>..</code>

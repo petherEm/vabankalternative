@@ -17,46 +17,39 @@ import { Pagination } from "swiper/modules";
 
 const reviewsData = [
   {
-    avatar: "/reviews/avatar-1.png",
+    avatar: "/reviews/joanna_korczyc.jpeg",
     name: "Joanna Korczyc",
-    job: "Financial Advisor",
+    job: "Independent Financial Advisor",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "The team at Vabank.dev excelled in delivering a website that is not only visually stunning but also immensly user-friendly. The team was deeply committed to understanding my vision and requirements. Their approach to collaboration was seamless, marked by consistent communication and a keen willingness to incorporate my feedback.",
   },
   {
-    avatar: "/reviews/avatar-2.png",
+    avatar: "/reviews/Maciejewska2.png",
     name: "Alina Maciejewska",
     job: "Professor of Science",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "Since the launch of the new website, I have seen a significant uptick in client engagement and positive feedback. The site's professional appeal and ease of navigation have greatly improved the user experience. I am very pleased with the final product and would highly recommend Vabank.dev to anyone looking to build a new website or revamp an existing one.",
   },
   {
     avatar: "/reviews/avatar-3.png",
-    name: "Gibbarosa",
+    name: "Gibbarosa.com",
     job: "Gibbarosa Team",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "Their exceptional skill in e-commerce custom setups deserves special mention. Vabank.dev's proficiency in crafting tailored e-commerce solutions has significantly enhanced my website's functionality, making it not just informative but also a powerful tool for business transactions",
   },
   {
-    avatar: "/reviews/avatar-5.png",
-    name: "Joe Glue",
-    job: "Chef",
+    avatar: "/reviews/payloq.png",
+    name: "PayLoq.com",
+    job: "PayLoq Team",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "Vabank.dev deserves high praise for their ability to develop a social app encompassing all key features. Their work in this domain showcases a deep understanding of social networking dynamics, user engagement strategies, and the integration of advanced functionalities like real-time messaging, notifications, and content sharing. ",
   },
   {
-    avatar: "/reviews/avatar-1.png",
-    name: "Max Bukcet",
-    job: "Chef",
+    avatar: "/reviews/WU.png",
+    name: "Western Union",
+    job: "WU Team",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-  },
-  {
-    avatar: "/reviews/avatar-6.png",
-    name: "May Cresciendo",
-    job: "Chef",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+      "The highlight of their service was the real-time data feed integration. Vabank.dev proficiently managed the challenge of integrating live data, providing us with up-to-the-minute information essential for our operations. This feature has been instrumental in making timely, informed decisions.",
   },
 ];
 
@@ -76,17 +69,18 @@ const Reviews = () => {
           spaceBetween={30}
           modules={[Pagination]}
           pagination={{ clickable: true }}
-          className="h-[350px]"
+          className="h-[400px]"
         >
           {reviewsData.map((person, index) => (
             <SwiperSlide key={index}>
-              <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
+              <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[360px]">
                 <CardHeader className="p-0 mb-10">
                   <div className="flex items-center gap-x-4">
                     <Image
                       src={person.avatar}
-                      width={80}
-                      height={80}
+                      className="rounded-full"
+                      width={60}
+                      height={60}
                       alt=""
                       priority
                     />

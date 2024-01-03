@@ -6,6 +6,16 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/work/17_payloq.png",
+    category: "AI",
+    name: "PayLoq.com - dev payments community.",
+    tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],
+    description:
+      "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
+    link: "https://trueremit.vercel.app/",
+    github: "https://github.com/petherEm/trueremit",
+  },
+  {
     image: "/work/1_Gibbarosa.png",
     category: "e-commerce",
     name: "Gibbarosa, Pre-owned Luxury",
@@ -126,16 +136,6 @@ const projectData = [
     github: "https://github.com/petherEm/mythreads",
   },
   {
-    image: "/work/13_PayLooq.png",
-    category: "AI",
-    name: "PayLooq - your AI powered remittance forum",
-    tags: ["Next.js", "OpenAI", "MongoDB", "Webhooks"],
-    description:
-      "Still in progress. PayLooq is AI powered payments forum. Built with Next.js, OpenAI, MongoDB and TailwindCSS.",
-    link: "https://trueremit.vercel.app/",
-    github: "https://github.com/petherEm/trueremit",
-  },
-  {
     image: "/work/14_SaaSAS.png",
     category: "AI",
     name: "SaaS - AI powered Code, Music and Video generator.",
@@ -164,6 +164,16 @@ const projectData = [
       "Previous version of our website built with Next.js, TailwindCSS and Framer Motion.",
     link: "https://piotrdev2.vercel.app/",
     github: "https://github.com/petherEm/piotrdev2",
+  },
+  {
+    image: "/work/17_payloq.png",
+    category: "AI",
+    name: "PayLoq.com - dev payments community.",
+    tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],
+    description:
+      "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
+    link: "https://trueremit.vercel.app/",
+    github: "https://github.com/petherEm/trueremit",
   },
 ];
 // remove category duplicates

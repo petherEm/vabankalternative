@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Download, Send } from "lucide-react";
@@ -21,7 +22,7 @@ const Hero = () => {
         <div className="flex justify-between gap-x-8">
           <div className="flex sm:w-[500px] md:w-[450px] lg:w-[450px] xl:w-[600px] lg:max-w-[700px] flex-col justify-center mx-auto lg:mx-0 text-center lg:text-left">
             <div className="text-[8px] md:text-[10px] lg:text-[12px] uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Web Development | Data Science | Go-To-Market
+              Web Development | Analytics | Go-To-Market
             </div>
             <h1 className="h1 mb-4">
               Passion driven
@@ -86,33 +87,23 @@ const Hero = () => {
                 containerStyles="bg-hero_shape w-[200x] h-[600px] bg-no-repeat relative bg-bottom"
                 imgSrc="/hero/1.svg"
               /> */}
+
               <div className="absolute top-[100px] right-[130px] mockup-code bg-black/80">
                 <pre data-prefix="$">
                   <code>Hi there</code>
                 </pre>
-                <pre data-prefix=">" className="text-warning">
-                  <code className="text-primary">
-                    <span className="text-white">We think</span> together.
-                  </code>
-                </pre>
-                <pre data-prefix=">" className="text-warning">
-                  <code className="text-primary">
-                    <span className="text-white">We build</span> together.
-                  </code>
-                </pre>
-                <pre data-prefix=">" className="text-warning">
-                  <code className="text-primary">
-                    <span className="text-white">We celebrate</span> together.
-                  </code>
+
+                <pre data-prefix=">" className="text-white">
+                  <code>Let's get in touch</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
-                  <code>Let's get in touch!</code>
+                  <code>and redefine your</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
-                  <code>....</code>
+                  <code className="text-red-500">Business</code>
                 </pre>
                 <pre data-prefix=">" className="text-white">
-                  <code>Now! :)</code>
+                  <code>Now!</code>
                 </pre>
               </div>
             </div>

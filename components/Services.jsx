@@ -17,15 +17,15 @@ const servicesData = [
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Data Science",
+    title: "Analytics",
     description:
       "Leveraging Python excellence and latest AI developments, we deliver precise solutions for intelligent, data-driven decision-making, ensuring our clients harness the full potential of their data for strategic advantage and growth.",
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "Go-to-Market Strategy",
+    title: "Go-to-Market",
     description:
-      "Crafting effective go-to-market strategies, we combine market analysis with innovative tactics to launch and position your products successfully in the competitive landscape.",
+      "When crafting the effective go-to-market strategies, we combine our years of experience, deep market analysis with innovative tactics to launch and position your products successfully in the competitive omnichannel landscape.",
   },
 ];
 
