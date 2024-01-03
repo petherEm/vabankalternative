@@ -166,14 +166,14 @@ const projectData = [
     github: "https://github.com/petherEm/piotrdev2",
   },
   {
-    image: "/work/17_payloq.png",
-    category: "AI",
-    name: "PayLoq.com - dev payments community.",
-    tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],
+    image: "/work/18_Chamonify.png",
+    category: "e-commerce",
+    name: "Chamonify - book your stay in Haute Savoie.",
+    tags: ["Next.js", "TailwindCSS, Shadcn"],
     description:
-      "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
-    link: "https://trueremit.vercel.app/",
-    github: "https://github.com/petherEm/trueremit",
+      "Chamonify is a booking service for your stays at Chamonix Mont Blanc, France. Built with Next.js, TailwindCSS, Shadcn.",
+    link: "https://chamonify.vercel.app/",
+    github: "https://github.com/petherEm/chamonify",
   },
 ];
 // remove category duplicates
