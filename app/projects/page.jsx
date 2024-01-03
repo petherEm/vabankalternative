@@ -6,7 +6,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/17_payloq.png",
+    image: "/work/17_PayLoq.png",
     category: "AI",
     name: "PayLoq.com - dev payments community.",
     tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],

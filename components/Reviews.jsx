@@ -31,7 +31,7 @@ const reviewsData = [
       "Since the launch of the new website, I have seen a significant uptick in client engagement and positive feedback. The site's professional appeal and ease of navigation have greatly improved the user experience. I am very pleased with the final product and would highly recommend Vabank.dev to anyone looking to build a new website or revamp an existing one.",
   },
   {
-    avatar: "/reviews/avatar-3.png",
+    avatar: "/reviews/KD.jpg",
     name: "Gibbarosa.com",
     job: "Gibbarosa Team",
     review:
