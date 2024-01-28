@@ -9,9 +9,14 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "vabank.dev | Modern Web Development & Data Science Agency",
+  title: "vabank.dev | Modern Web Development & Data Science For Your Business",
   description:
-    "Next.js, React.js, Vanilla.js, Node.js, Python, Pandas, Data Science, Numpy, PyDeck, Mapbox, PyTorch",
+    "Modern Web Development, AI implementation, Next.js, React.js, Vanilla.js, Node.js, Python, Pandas, Data Science, Numpy, PyDeck, Mapbox, PyTorch",
+
+  metadataBase: new URL("https://www.vabank.dev/"),
+  openGraph: {
+    images: "/metalogo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
