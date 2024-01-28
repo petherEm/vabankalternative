@@ -12,7 +12,7 @@ const projectData = [
     tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],
     description:
       "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
-    link: "https://trueremit.vercel.app/",
+    link: "https://www.payloq.com",
     github: "https://github.com/petherEm/trueremit",
   },
   {
@@ -22,8 +22,8 @@ const projectData = [
     tags: ["Next.js", "Sanity.io", "Stripe", "TailwindCSS"],
     description:
       "E-commerce project built on Next.js 14 and Sanity.io with Stripe, BLIK and P24 integration.",
-    link: "https://gibbarosaprod.vercel.app/",
-    github: "https://github.com/petherEm/gibbarosaprod",
+    link: "https://gibbarosa.vabank.dev/",
+    github: "https://github.com/petherEm/gibbarosa_final_2.0/tree/master",
   },
   {
     image: "/work/2_Profesor.png",
@@ -34,6 +34,26 @@ const projectData = [
       "Academic researcher and professor landing page built on Next.js 14, TailwindCSS and with Framer Motion animations.",
     link: "https://alinamaciejewska.pl",
     github: "https://github.com/petherEm/profesorlina2",
+  },
+  {
+    image: "/work/18_Chamonify.png",
+    category: "e-commerce",
+    name: "Chamonify - book your stay in Haute Savoie.",
+    tags: ["Next.js", "TailwindCSS, Shadcn"],
+    description:
+      "Chamonify is a booking service for your stays at Chamonix Mont Blanc, France. Built with Next.js, TailwindCSS, Shadcn.",
+    link: "https://chamonify.vercel.app/",
+    github: "https://github.com/petherEm/chamonify",
+  },
+  {
+    image: "/work/19_Bikeshop.png",
+    category: "e-commerce",
+    name: "BikeSpring - dream bike shop.",
+    tags: ["Next.js", "Stripe", "Sanity.io"],
+    description:
+      "BikeSpring is a true, modern online bike shop. Built with Next.js 14, Sanity.io, Stripe payments and TailwindCSS.",
+    link: "https://bikespring.vercel.app/",
+    github: "https://github.com/petherEm/Bikespring",
   },
   {
     image: "/work/3_Hexagons.png",
@@ -164,16 +184,6 @@ const projectData = [
       "Previous version of our website built with Next.js, TailwindCSS and Framer Motion.",
     link: "https://piotrdev2.vercel.app/",
     github: "https://github.com/petherEm/piotrdev2",
-  },
-  {
-    image: "/work/18_Chamonify.png",
-    category: "e-commerce",
-    name: "Chamonify - book your stay in Haute Savoie.",
-    tags: ["Next.js", "TailwindCSS, Shadcn"],
-    description:
-      "Chamonify is a booking service for your stays at Chamonix Mont Blanc, France. Built with Next.js, TailwindCSS, Shadcn.",
-    link: "https://chamonify.vercel.app/",
-    github: "https://github.com/petherEm/chamonify",
   },
 ];
 // remove category duplicates

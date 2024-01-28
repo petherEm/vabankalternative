@@ -12,13 +12,13 @@ import ProjectCard from "./ProjectCard";
 const projectData = [
   {
     image: "/work/1_Gibbarosa.png",
-    category: "fullstack",
+    category: "e-commerce",
     name: "Gibbarosa, Pre-owned Luxury",
     tags: ["Next.js", "Sanity.io", "Stripe", "TailwindCSS"],
     description:
       "E-commerce project built on Next.js 14 and Sanity.io with Stripe, BLIK and P24 integration.",
-    link: "https://gibbarosaprod.vercel.app/",
-    github: "https://github.com/petherEm/gibbarosaprod",
+    link: "https://gibbarosa.vabank.dev/",
+    github: "https://github.com/petherEm/gibbarosa_final_2.0/tree/master",
   },
   {
     image: "/work/2_Profesor.png",
