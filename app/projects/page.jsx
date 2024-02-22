@@ -6,6 +6,16 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/work/21_Eventeror.png",
+    category: "e-commerce",
+    name: "Evently - event platform.",
+    tags: ["Next.js", "MongoDB", "TailwindCSS, Clerk"],
+    description:
+      "Evently is a modern event platform built with Next.js, MongoDB, TailwindCSS and Clerk.",
+    link: "https://eventorex.vercel.app/",
+    github: "https://github.com/petherEm/eventorex",
+  },
+  {
     image: "/work/17_PayLoq.png",
     category: "AI",
     name: "PayLoq.com - dev payments community.",
@@ -66,6 +76,16 @@ const projectData = [
     github: "https://github.com/petherEm/psdfrance",
   },
   {
+    image: "/work/20_Imaginify.png",
+    category: "AI",
+    name: "Imaginify - AI image playground.",
+    tags: ["Next.js", "MongoDB", "TailwindCSS, CloudinaryAI"],
+    description:
+      "Testing CloudinaryAI, MongoDB, Clerk with Next.js 14 and TailwindCSS. Imaginify is an AI playground for image processing and manipulation.",
+    link: "https://imaagic.vercel.app",
+    github: "https://github.com/petherEm/imaagic",
+  },
+  {
     image: "/work/4_BetterGPT.png",
     category: "AI",
     name: "Chatbot, improved GPT-4",
@@ -112,8 +132,8 @@ const projectData = [
     tags: ["React.js", "TailwindCSS", "CalendarPicker"],
     description:
       "Hotel booking project built with React.js, TailwindCSS and CalendarPicker.",
-    link: "https://flix-project-phi.vercel.app/",
-    github: "https://github.com/petherEm/flix_project",
+    link: "https://ampmhotel.vercel.app/",
+    github: "https://github.com/petherEm/ampmhotel",
   },
   {
     image: "/work/9_PizzaPierre.png",
@@ -165,16 +185,7 @@ const projectData = [
     link: "https://saasas.vercel.app/",
     github: "https://github.com/petherEm/saasas",
   },
-  {
-    image: "/work/15_Developedian.png",
-    category: "Services",
-    name: "Project Grafbase - porfolio showcase.",
-    tags: ["Next.js", "Grafbase", "TailwindCSS"],
-    description:
-      "Half clone of Dribble.com. Project Grafbase is a portfolio showcase built with Next.js, Grafbase and TailwindCSS.",
-    link: "https://grafbaseproject.vercel.app/",
-    github: "https://github.com/petherEm/grafbaseproject",
-  },
+
   {
     image: "/work/16_prevVabank.png",
     category: "Landing",

@@ -41,14 +41,14 @@ const projectData = [
     github: "https://github.com/petherEm/psdfrance",
   },
   {
-    image: "/work/4_BetterGPT.png",
-    category: "fullstack",
-    name: "Chatbot, improved GPT-4",
-    tags: ["Next.js", "OpenAI", "Firebase"],
+    image: "/work/17_PayLoq.png",
+    category: "AI",
+    name: "PayLoq.com - dev payments community.",
+    tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],
     description:
-      "Chatbot built on Next.js 14 and OpenAI API. Improved GPT-4 model with Firebase integration and TailwindCSS styling.",
-    link: "https://bettergpt.vabank.dev/",
-    github: "https://github.com/petherEm/OneGPT",
+      "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
+    link: "https://www.payloq.com",
+    github: "https://github.com/petherEm/trueremit",
   },
 ];
 
