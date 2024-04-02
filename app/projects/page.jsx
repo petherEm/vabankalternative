@@ -6,10 +6,31 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/work/24_PayLoqTrue.png",
+    category: "Services",
+    name: "Payments Insights and Tech overview",
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "Clerk"],
+    description:
+      "AI in Payments and Remittance.Dev view on integrations and Market Insights.",
+    link: "https://www.payloq.com/",
+    github: "https://github.com/petherEm/lowprofilePro",
+  },
+  {
+    image: "/work/23_DocsPayLoq.png",
+    category: "Services",
+    name: "Documentation for PayLoq.com",
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "Clerk"],
+    description:
+      "Documentation and tutorials for PayLoq.com. Built with Next.js, MongoDB, TailwindCSS and Clerk.",
+    link: "https://docs.payloq.com/",
+    github: "https://github.com/petherEm/lowprofile4",
+  },
+
+  {
     image: "/work/21_Eventeror.png",
     category: "e-commerce",
     name: "Evently - event platform.",
-    tags: ["Next.js", "MongoDB", "TailwindCSS, Clerk"],
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "Clerk"],
     description:
       "Evently is a modern event platform built with Next.js, MongoDB, TailwindCSS and Clerk.",
     link: "https://eventorex.vercel.app/",
@@ -19,10 +40,10 @@ const projectData = [
     image: "/work/17_PayLoq.png",
     category: "AI",
     name: "PayLoq.com - dev payments community.",
-    tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "OpenAI"],
     description:
       "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
-    link: "https://www.payloq.com",
+    link: "https://trueremit.vercel.app/",
     github: "https://github.com/petherEm/trueremit",
   },
   {
@@ -46,10 +67,20 @@ const projectData = [
     github: "https://github.com/petherEm/profesorlina2",
   },
   {
+    image: "/work/22_FitPhysique.png",
+    category: "Landing",
+    name: "Gym & Personal Trainer, Landing Page",
+    tags: ["Next.js", "TailwindCSS", "Framer Motion"],
+    description:
+      "A landing page for a gym and personal trainer. Built with Next.js 14, TailwindCSS and Framer Motion animations.",
+    link: "https://gym40.vercel.app/",
+    github: "https://github.com/petherEm/gym40",
+  },
+  {
     image: "/work/18_Chamonify.png",
     category: "e-commerce",
     name: "Chamonify - book your stay in Haute Savoie.",
-    tags: ["Next.js", "TailwindCSS, Shadcn"],
+    tags: ["Next.js", "TailwindCSS", "Shadcn"],
     description:
       "Chamonify is a booking service for your stays at Chamonix Mont Blanc, France. Built with Next.js, TailwindCSS, Shadcn.",
     link: "https://chamonify.vercel.app/",
@@ -79,7 +110,7 @@ const projectData = [
     image: "/work/20_Imaginify.png",
     category: "AI",
     name: "Imaginify - AI image playground.",
-    tags: ["Next.js", "MongoDB", "TailwindCSS, CloudinaryAI"],
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "CloudinaryAI"],
     description:
       "Testing CloudinaryAI, MongoDB, Clerk with Next.js 14 and TailwindCSS. Imaginify is an AI playground for image processing and manipulation.",
     link: "https://imaagic.vercel.app",
