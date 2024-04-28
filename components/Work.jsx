@@ -41,14 +41,14 @@ const projectData = [
     github: "https://github.com/petherEm/psdfrance",
   },
   {
-    image: "/work/17_PayLoq.png",
-    category: "AI",
-    name: "PayLoq.com - dev payments community.",
-    tags: ["Next.js", "MongoDB", "TailwindCSS, OpenAI"],
+    image: "/work/24_PayLoqTrue.png",
+    category: "Services",
+    name: "Payments Insights and Tech overview",
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "Clerk"],
     description:
-      "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
-    link: "https://www.payloq.com",
-    github: "https://github.com/petherEm/trueremit",
+      "AI in Payments and Remittance.Dev view on integrations and Market Insights.",
+    link: "https://www.payloq.com/",
+    github: "https://github.com/petherEm/lowprofilePro",
   },
 ];
 

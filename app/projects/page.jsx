@@ -39,10 +39,10 @@ const projectData = [
   {
     image: "/work/17_PayLoq.png",
     category: "AI",
-    name: "PayLoq.com - dev payments community.",
+    name: "PayLoq - dev payments community.",
     tags: ["Next.js", "MongoDB", "TailwindCSS", "OpenAI"],
     description:
-      "PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
+      "PayLoq community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.",
     link: "https://trueremit.vercel.app/",
     github: "https://github.com/petherEm/trueremit",
   },
@@ -80,11 +80,22 @@ const projectData = [
     image: "/work/18_Chamonify.png",
     category: "e-commerce",
     name: "Chamonify - book your stay in Haute Savoie.",
+
     tags: ["Next.js", "TailwindCSS", "Shadcn"],
     description:
       "Chamonify is a booking service for your stays at Chamonix Mont Blanc, France. Built with Next.js, TailwindCSS, Shadcn.",
     link: "https://chamonify.vercel.app/",
     github: "https://github.com/petherEm/chamonify",
+  },
+  {
+    image: "/work/25_LinkedInClone.png",
+    category: "Services",
+    name: "LinkedIn Clone with MSAzure, MongoDB, Next.js, and TailwindCSS.",
+    tags: ["Next.js", "TailwindCSS", "Shadcn"],
+    description:
+      "Extensive use of MSAzure with MongoDB, Next.js, TailwindCSS and Shadcn.",
+    link: "https://linkedin44.vercel.app/",
+    github: "https://github.com/petherEm/LinkedIn44",
   },
   {
     image: "/work/19_Bikeshop.png",
