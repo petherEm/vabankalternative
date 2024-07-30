@@ -6,6 +6,26 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/work/26_Gibbarosa2.png",
+    category: "e-commerce",
+    name: "Gibbarosa, Pre-owned Luxury 2.0",
+    tags: ["Next.js", "Medusa.js", "Stripe", "TailwindCSS"],
+    description:
+      "E-commerce project built on Next.js 14 and Medusa.js as back-end, admin and with Stripe integration.",
+    link: "https://www.gibbarosa.io",
+    github: "https://github.com/petherEm/gibnext-storefront",
+  },
+  {
+    image: "/work/27_PSDTracker.png",
+    category: "Services",
+    name: "SaaS - PSD Tracker",
+    tags: ["Next.js", "Appwrite", "Mapbox", "TailwindCSS"],
+    description:
+      "Commercial SaaS providing real-time data on registered Money Transfer PSD agents across Europe.",
+    link: "https://psd5.vercel.app/",
+    github: "https://github.com/petherEm",
+  },
+  {
     image: "/work/24_PayLoqTrue.png",
     category: "Services",
     name: "Payments Insights and Tech overview",
@@ -24,6 +44,36 @@ const projectData = [
       "Documentation and tutorials for PayLoq.com. Built with Next.js, MongoDB, TailwindCSS and Clerk.",
     link: "https://docs.payloq.com/",
     github: "https://github.com/petherEm/lowprofile4",
+  },
+  {
+    image: "/work/28_WUAIpay.png",
+    category: "e-commerce",
+    name: "Western Union + Payment Methods",
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "P24"],
+    description:
+      "Commercial project to improve embed WU Digital Bank within money transfer service. Built on Next.js 14, MongoDB and TailwindCSS.",
+    link: "https://wuaipay.vercel.app/",
+    github: "https://github.com/petherEm/WUAIPAY",
+  },
+  {
+    image: "/work/29_ZoomClone.png",
+    category: "Services",
+    name: "Zoom Clone (Yoom)",
+    tags: ["Next.js", "Clerk", "GetStream.io", "TailwindCSS"],
+    description:
+      "Zoom clone built with Next.js 14, getStream.io, Clerk and TailwindCSS. Inspired by JavaScript Mastery.",
+    link: "https://zoomclone-beta.vercel.app/",
+    github: "https://github.com/petherEm/zoomclone",
+  },
+  {
+    image: "/work/30_TresLenguajes.png",
+    category: "e-commerce",
+    name: "DuoLingo Clone (Tres Lenguajes)",
+    tags: ["Next.js", "Clerk", "Drizzle ORM", "TailwindCSS", "Stripe"],
+    description:
+      "TresLenguajes is a DuoLingo clone built with Next.js, Clerk, Drizzle ORM, Stripe and TailwindCSS. Perfect platform to learn languages.",
+    link: "https://treslenguajes.vercel.app/",
+    github: "https://github.com/petherEm/zoomclone",
   },
 
   {
@@ -91,7 +141,7 @@ const projectData = [
     image: "/work/25_LinkedInClone.png",
     category: "Services",
     name: "LinkedIn Clone with MSAzure, MongoDB, Next.js, and TailwindCSS.",
-    tags: ["Next.js", "TailwindCSS", "Shadcn"],
+    tags: ["Next.js", "TailwindCSS", "MSAzure", "MongoDB"],
     description:
       "Extensive use of MSAzure with MongoDB, Next.js, TailwindCSS and Shadcn.",
     link: "https://linkedin44.vercel.app/",
@@ -157,6 +207,7 @@ const projectData = [
     link: "https://wuimprove2.vercel.app/",
     github: "https://github.com/petherEm/wuimprove2",
   },
+
   {
     image: "/work/7_NetflixClone.png",
     category: "Services",

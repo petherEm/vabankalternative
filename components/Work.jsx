@@ -11,14 +11,14 @@ import ProjectCard from "./ProjectCard";
 
 const projectData = [
   {
-    image: "/work/1_Gibbarosa.png",
+    image: "/work/26_Gibbarosa2.png",
     category: "e-commerce",
-    name: "Gibbarosa, Pre-owned Luxury",
-    tags: ["Next.js", "Sanity.io", "Stripe", "TailwindCSS"],
+    name: "Gibbarosa, Pre-owned Luxury 2.0",
+    tags: ["Next.js", "Medusa.js", "Stripe", "TailwindCSS"],
     description:
-      "E-commerce project built on Next.js 14 and Sanity.io with Stripe, BLIK and P24 integration.",
-    link: "https://gibbarosa.vabank.dev/",
-    github: "https://github.com/petherEm/gibbarosa_final_2.0/tree/master",
+      "E-commerce project built on Next.js 14 and Medusa.js as back-end, admin and with Stripe integration.",
+    link: "https://www.gibbarosa.io",
+    github: "https://github.com/petherEm/gibnext-storefront",
   },
   {
     image: "/work/2_Profesor.png",
@@ -31,14 +31,14 @@ const projectData = [
     github: "https://github.com/petherEm/profesorlina2",
   },
   {
-    image: "/work/3_Hexagons.png",
-    category: "fullstack",
-    name: "Dynamic Mapping, Hexagon View",
-    tags: ["Next.js", "DeckGL", "Mapbox"],
+    image: "/work/27_PSDTracker.png",
+    category: "Services",
+    name: "SaaS - PSD Tracker",
+    tags: ["Next.js", "Appwrite", "Mapbox", "TailwindCSS"],
     description:
-      "Mapbox and DeckGL integration with Next.js 14. Dynamic mapping with hexagon view and data filtering.",
-    link: "https://psdfrance.vercel.app/hexagonview",
-    github: "https://github.com/petherEm/psdfrance",
+      "Commercial SaaS providing real-time data on registered Money Transfer PSD agents across Europe.",
+    link: "https://psd5.vercel.app/",
+    github: "https://github.com/petherEm",
   },
   {
     image: "/work/24_PayLoqTrue.png",
