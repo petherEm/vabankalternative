@@ -127,6 +127,16 @@ const projectData = [
     github: "https://github.com/petherEm/gym40",
   },
   {
+    image: "/work/31_DisneyChannel.png",
+    category: "AI",
+    name: "Disney Channel Clone",
+    tags: ["Next.js", "TailwindCSS", "OpenAI"],
+    description:
+      "Movie recommendation and summarizer engine built with Next.js 14, OpenAI and TailwindCSS.",
+    link: "https://disneyclone-lyart.vercel.app/",
+    github: "https://github.com/petherEm/disneyclone",
+  },
+  {
     image: "/work/18_Chamonify.png",
     category: "e-commerce",
     name: "Chamonify - book your stay in Haute Savoie.",
@@ -136,6 +146,16 @@ const projectData = [
       "Chamonify is a booking service for your stays at Chamonix Mont Blanc, France. Built with Next.js, TailwindCSS, Shadcn.",
     link: "https://chamonify.vercel.app/",
     github: "https://github.com/petherEm/chamonify",
+  },
+  {
+    image: "/work/32_HealthYX.png",
+    category: "Services",
+    name: "Patient Management Framework - work in progress.",
+    tags: ["Next.js", "Appwrite", "TailwindCSS", "Shadcn"],
+    description:
+      "Patient Management Framework built with Appwrite, as base for further development..",
+    link: "https://healthyx.vercel.app/",
+    github: "https://github.com/petherEm/healthyx",
   },
   {
     image: "/work/25_LinkedInClone.png",
