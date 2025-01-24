@@ -1,5 +1,4 @@
-import DevImg from "./DevImg";
-import Image from "next/image";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   SiJavascript,
@@ -12,27 +11,17 @@ import {
   SiMapbox,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import Social from "./Social";
+
 
 import {
-  User2,
   MailIcon,
   HomeIcon,
-  PhoneCall,
   GraduationCap,
-  Calendar,
   Briefcase,
 } from "lucide-react";
 
 const infoData = [
-  // {
-  //   icon: <User2 size={20} />,
-  //   text: "Pior Maciejewski",
-  // },
-  // {
-  //   icon: <PhoneCall size={20} />,
-  //   text: "+1 234 567 890",
-  // },
+
   {
     icon: <MailIcon size={20} />,
     text: "hello@vabank.dev",

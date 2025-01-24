@@ -44,7 +44,7 @@ const ProjectCard = ({ project }) => {
       </CardHeader>
 
       <div className="flex-1 px-8 py-6 flex flex-col relative">
-        <Badge className="absolute -top-4 right-8 uppercase text-sm font-medium mb-2  border shadow-sm">
+        <Badge className="absolute -top-4 left-8 uppercase text-sm font-medium mb-2 bg-background border shadow-sm">
           {project.category}
         </Badge>
 
@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
           </p>
         </div>
 
-        <div className="text-[12px] text-white pt-4 flex flex-wrap gap-2">
+        <div className="text-[12px] text-muted-foreground pt-4 flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <span key={index}>#{tag}</span>
           ))}

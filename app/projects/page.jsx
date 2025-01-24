@@ -5,15 +5,16 @@ import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
+
   {
-    image: "/work/26_Gibbarosa2.png",
+    image: "/work/26_Gibbarosa4.png",
     category: "e-commerce",
     name: "Gibbarosa, Pre-owned Luxury 2.0",
     tags: ["Next.js", "Medusa.js", "Stripe", "TailwindCSS"],
     description:
       "E-commerce project built on Next.js 14 and Medusa.js as back-end, admin and with Stripe integration.",
-    link: "https://www.gibbarosa.io",
-    github: "https://github.com/petherEm/gibnext-storefront",
+    link: "https://v4.gibbarosa.io",
+    github: "https://github.com/petherEm/gibb4-front",
   },
   {
     image: "/work/27_PSDTracker.png",
@@ -44,6 +45,16 @@ const projectData = [
       "Documentation and tutorials for PayLoq.com. Built with Next.js, MongoDB, TailwindCSS and Clerk.",
     link: "https://docs.payloq.com/",
     github: "https://github.com/petherEm/lowprofile4",
+  },
+  {
+    image: "/work/33_personal_automotive.png",
+    category: "Landing",
+    name: "Personal Website - Automotive",
+    tags: ["Next.js", "TailwindCSS", "ShadCN"],
+    description:
+      "Personal website for an automotive industry leader. Built with TailwindCSS, TailwindUI and Next.js",
+    link: "https://malgosia3.vercel.app/",
+    github: "https://github.com/petherEm/malgosia3",
   },
   {
     image: "/work/28_WUAIpay.png",
@@ -265,8 +276,8 @@ const projectData = [
     tags: ["Next.js", "Firebase", "TailwindCSS", "Stripe"],
     description:
       "Amazon clone built with Next.js, Firebase and TailwindCSS. Training project to boost our front-end skills.",
-    link: "/",
-    github: "/",
+    link: "https://amazon4-two.vercel.app/",
+    github: "https://github.com/petherEm/amazon4",
   },
   {
     image: "/work/11_Electronics.png",

@@ -1,98 +1,60 @@
-import Link from "next/link";
-import Image from "next/image";
-
-import { Button } from "@/components/ui/button";
-import { Download, Send } from "lucide-react";
-
-import {
-  RiBriefcase4Fill,
-  RiTeamFill,
-  RiTodoFill,
-  RiArrowDownSLine,
-} from "react-icons/ri";
-
-import DevImg from "./DevImg";
-import Badge from "./Badge";
-import Social from "./Social";
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Send } from "lucide-react"
+import { RiArrowDownSLine } from "react-icons/ri"
+import Social from "./Social"
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-none">
-      <div className="container mx-auto">
-        <div className="flex justify-between gap-x-8">
-          <div className="flex sm:w-[500px] md:w-[450px] lg:w-[450px] xl:w-[600px] lg:max-w-[700px] flex-col justify-center mx-auto lg:mx-0 text-center lg:text-left">
-            <div className="text-[8px] md:text-[10px] lg:text-[12px] uppercase font-semibold mb-4 text-primary tracking-[4px]">
+    <section className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[84vh] bg-hero bg-no-repeat bg-bottom dark:bg-none">
+      <div className="container mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24">
+        <div className="flex flex-col lg:flex-row justify-between gap-4 sm:gap-6 lg:gap-12 overflow-hidden">
+          {/* Left Content */}
+          <div className="flex flex-col justify-center w-full lg:w-[50%] xl:w-[55%] max-w-[600px] mx-auto lg:mx-0 text-center lg:text-left">
+            {/* Category text */}
+            <div className="text-[10px] sm:text-[11px] md:text-[12px] uppercase font-semibold mb-4 text-primary tracking-[4px] transition-all duration-300">
               Web Development | Analytics | Go-To-Market
             </div>
-            <h1 className="h1 mb-4">
+
+            {/* Heading */}
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 transition-all duration-300">
               Passion driven
               <span className="text-primary"> excellence.</span>
             </h1>
-            <p className="subtitle max-w-[590px] mx-auto xl:mx-0">
-              Our expertise spans diverse industries, integrating modern tech
-              skills with deep business insights to redefine the future of your
-              business. <br />
-              <span className="text-primary font-bold">vabank.dev</span> is not
-              another software development company. We are your true digital
-              partner maximizing your value.
+
+            {/* Subtitle */}
+            <p className="text-base sm:text-lg leading-relaxed mb-8 max-w-[590px] mx-auto lg:mx-0 transition-all duration-300">
+              Our expertise spans diverse industries, integrating modern tech skills with deep business insights to
+              redefine the future of your business. <br className="hidden sm:block" />
+              <span className="text-primary font-bold">vabank.dev</span> is not another software development company. We
+              are your true digital partner maximizing your value.
             </p>
 
-            <div className="flex flex-col gap-y-3 md:flex-row md:mx-auto lg:mx-0 xl:mx-0 mb-12">
+            {/* CTA Button */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8">
               <Link href="/contact">
-                <Button>
+                <Button className="w-full sm:w-auto transition-all duration-300">
                   Contact us <Send size={18} className="ml-3" />
                 </Button>
               </Link>
-              {/* <Link href="/contact">
-                <Button variant="secondary">
-                  Download CV <Download size={18} />
-                </Button>
-              </Link> */}
-              {/* <Social
-                containerStyles="flex gap-x-6 mx-auto xl:mx-0"
-                iconsStyles="text-foreground text-[22px] hover:text-primary transition-all"
-              /> */}
             </div>
-            {/* socials */}
-            <div className="">
+
+            {/* Social Links */}
+            <div className="transition-all duration-300">
               <Social
-                containerStyles="flex gap-x-6 justify-center lg:justify-start lg:mx-0 xl:mx-0"
-                iconsStyles="text-foreground text-[22px] hover:text-primary/80 transition-all"
+                containerStyles="flex gap-x-6 justify-center lg:justify-start"
+                iconsStyles="text-foreground text-[22px] hover:text-primary/80 transition-all duration-300"
               />
             </div>
           </div>
 
-          <div className="hidden lg:flex lg:flex-col relative">
-            {/* <Badge
-              containerStyles=""
-              icon={<RiBriefcase4Fill />}
-              endCountNum={3}
-              badgeText="Years of experience"
-            />
-            <Badge
-              containerStyles=""
-              icon={<RiTodoFill />}
-              endCountText="k"
-              badgeText="Finished projects"
-            />
-            <Badge
-              containerStyles=""
-              icon={<RiTodoFill />}
-              endCountNum={9}
-              endCountText="k"
-              badgeText="Happy Clients"
-            /> */}
-            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
-              {/* <DevImg
-                containerStyles="bg-hero_shape w-[200x] h-[600px] bg-no-repeat relative bg-bottom"
-                imgSrc="/hero/1.svg"
-              /> */}
-
-              <div className="absolute top-[100px] right-[130px] mockup-code bg-black/80">
+          {/* Right Content - Code Display */}
+          <div className="hidden lg:flex lg:flex-col relative lg:w-[45%] xl:w-[40%] min-h-[600px]">
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-full max-w-[400px] lg:max-w-[450px] xl:max-w-[500px] aspect-square bg-contain bg-no-repeat absolute top-1/2 -translate-y-1/2 right-0 lg:-right-8 xl:-right-8">
+              <div className="absolute top-1/2 -translate-y-1/2 right-[20%] lg:right-[25%] xl:right-[30%] mockup-code bg-black/80 transition-all duration-300">
                 <pre data-prefix="$">
                   <code>Hi there</code>
                 </pre>
-
                 <pre data-prefix=">" className="text-white">
                   <code>Let's get in touch</code>
                 </pre>
@@ -110,12 +72,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex absolute left-2/4 bottom-24 xl:bottom-12 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary" />
+        {/* Bounce Arrow */}
+        <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 bottom-8 transition-all duration-300">
+          <RiArrowDownSLine className="text-3xl text-primary animate-bounce" />
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
+export default Hero
 
-export default Hero;

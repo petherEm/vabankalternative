@@ -22,31 +22,33 @@ const Header = () => {
 
   return (
     <header
-      className={`${
-        header ? " bg-white shadow-lg dark:bg-accent" : " dark:bg-transparent"
-      } sticky top-0 z-30 transition-all ${pathname === "/" && "bg-[#fef9f5]"}`}
-    >
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <Logo />
+    className={`${
+      header ? "bg-white shadow-lg dark:bg-black/95 delay-100" : "bg-transparent dark:bg-transparent"
+    } sticky top-0 z-30 transition-all duration-300 ${pathname === "/" ? "bg-[#fef9f5]" : ""}`}
+  >
+    <div className="container mx-auto px-4 py-0">
+      <div className="flex items-center justify-between gap-4">
+        {/* Logo */}
+        <Logo />
 
-          <div className="flex items-center gap-x-6">
-            <Nav
-              containerStyles="hidden xl:flex gap-x-8 items-center"
-              linkStyles="relative hover:text-primary transition-all"
-              underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
-            />
-            <div className="hidden xl:inline-block">
-              <ThemeToggler />
-            </div>
-          </div>
-          <div className="flex items-center gap-x-3 xl:hidden">
-            <ThemeToggler />
-            <MobileNav />
-          </div>
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex xl:flex items-center gap-x-8">
+          <Nav
+            containerStyles="flex items-center gap-x-6 lg:gap-x-8"
+            linkStyles="text-base font-medium relative hover:text-primary transition-all duration-300"
+            underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          />
+          <ThemeToggler className="ml-2" />
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="flex h-10 items-center gap-x-4 lg:hidden xl:hidden">
+          <ThemeToggler />
+          <MobileNav />
         </div>
       </div>
-    </header>
+    </div>
+  </header>
   );
 };
 

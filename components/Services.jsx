@@ -29,39 +29,43 @@ const servicesData = [
   },
 ];
 
+
 const Services = () => {
   return (
-    <section className="mb-12 xl:mb-36">
-      <div className="container mx-auto">
-        <h2 className="section-title mb-20 xl:mb-24 text-center mx-auto">
+    <section className="py-12 md:py-16 xl:py-24">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 xl:mb-24 max-w-[500px] mx-auto">
           Our services
         </h2>
 
-        <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-6 xl:gap-8">
           {servicesData.map((item, index) => {
             return (
               <Card
                 key={index}
-                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                className={`relative flex flex-col items-center p-6 pt-16 min-h-[300px] transition-all duration-300 hover:shadow-lg ${
+                  index === servicesData.length - 1 && servicesData.length % 2 === 1
+                    ? "md:col-span-2 xl:col-span-1 md:max-w-[calc(50%-0.75rem)] md:mx-auto xl:max-w-none"
+                    : ""
+                }`}
               >
-                <CardHeader className="text-primary absolute -top-[60px]">
-                  <div className="w-[80px] md:w-[140px] h-[40px] md:h-[80px] bg-white dark:bg-background flex justify-center items-center">
-                    {item.icon}
+                <CardHeader className="absolute -top-8 md:-top-10 p-0">
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-background rounded-lg shadow-md flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <div className="text-primary w-8 h-8 md:w-10 md:h-10">{item.icon}</div>
                   </div>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <CardTitle className="mb-4">{item.title}</CardTitle>
-                  <CardDescription className="text-[16px]">
-                    {item.description}
-                  </CardDescription>
+
+                <CardContent className="text-center pt-8">
+                  <CardTitle className="text-xl md:text-2xl mb-4">{item.title}</CardTitle>
+                  <CardDescription className="text-base md:text-lg leading-relaxed">{item.description}</CardDescription>
                 </CardContent>
               </Card>
-            );
+            )
           })}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 export default Services;

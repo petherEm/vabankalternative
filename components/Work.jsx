@@ -11,14 +11,14 @@ import ProjectCard from "./ProjectCard";
 
 const projectData = [
   {
-    image: "/work/26_Gibbarosa2.png",
+    image: "/work/26_Gibbarosa4.png",
     category: "e-commerce",
     name: "Gibbarosa, Pre-owned Luxury 2.0",
     tags: ["Next.js", "Medusa.js", "Stripe", "TailwindCSS"],
     description:
       "E-commerce project built on Next.js 14 and Medusa.js as back-end, admin and with Stripe integration.",
-    link: "https://www.gibbarosa.io",
-    github: "https://github.com/petherEm/gibnext-storefront",
+    link: "https://v4.gibbarosa.io",
+    github: "https://github.com/petherEm/gibb4-front",
   },
   {
     image: "/work/2_Profesor.png",
@@ -52,52 +52,95 @@ const projectData = [
   },
 ];
 
+
+
 const Work = () => {
   return (
-    <section className="relative mb-12 xl:mb-48">
-      <div className="container mx-auto">
-        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4">Selected Projects</h2>
-          <p className="subtitle mb-8">
-            Our project portfolio showcases a range of work, from commercial to
-            experimental and 'fun and learn' projects.{" "}
-            <span className="text-primary font-bold">
-              We never stop practicing.
-            </span>
-          </p>
-          <Link href="/projects">
-            <Button> All Projects</Button>
-          </Link>
-        </div>
+    <section className="py-12 md:py-16 xl:py-24">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col xl:flex-row xl:gap-12 items-center xl:items-start">
+          {/* Text Content */}
+          <div className="w-full xl:w-[35%] max-w-[400px] text-center xl:text-left mb-12 xl:mb-0 xl:sticky xl:top-24">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Selected Projects</h2>
+            <p className="text-muted-foreground text-base md:text-lg mb-8">
+              Our project portfolio showcases a range of work, from commercial to experimental and 'fun and learn'
+              projects. <span className="text-primary font-bold">We never stop practicing.</span>
+            </p>
+            <Link href="/projects">
+              <Button className="min-w-[160px]">All Projects</Button>
+            </Link>
+          </div>
 
-        {/* slider */}
-
-        <div className="xl:max-w-[900px] xl:absolute right-0 top-0">
-          <Swiper
-            className="h-[500px] "
-            slidesPerView={1}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-            }}
-            spaceBetween={30}
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
-          >
-            {/* show only the first 4 projects */}
-            {projectData.slice(0, 4).map((project, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <ProjectCard project={project} />
+          {/* Slider */}
+          <div className="w-full xl:w-[65%]">
+            <Swiper
+              className="!pb-12"
+              style={{
+                height: "auto",
+                minHeight: "500px",
+              }}
+              slidesPerView={1}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 15,
+                },
+                768: {
+                  slidesPerView: 1.75,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 25,
+                },
+                1280: {
+                  slidesPerView: 2.2,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              pagination={{
+                clickable: true,
+                dynamicBullets: true,
+              }}
+            >
+              {projectData.slice(0, 4).map((project, index) => (
+                <SwiperSlide key={index} className="h-auto">
+                  <div className="h-full p-0.5 sm:p-1">
+                    <ProjectCard project={project} />
+                  </div>
                 </SwiperSlide>
-              );
-            })}
-          </Swiper>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
-    </section>
-  );
-};
 
-export default Work;
+      {/* Custom styles for Swiper pagination using Tailwind primary color */}
+      <style jsx global>{`
+        .swiper-pagination-bullet {
+          background: hsl(var(--muted-foreground)) !important;
+          opacity: 0.5;
+          width: 10px;
+          height: 10px;
+        }
+        .swiper-pagination-bullet-active {
+          background: hsl(var(--primary)) !important;
+          opacity: 1;
+        }
+        .swiper-pagination {
+          position: absolute;
+          bottom: 0 !important;
+        }
+        .swiper-wrapper {
+          height: auto !important;
+        }
+      `}</style>
+    </section>
+  )
+}
+
+
+
+export default Work
+
